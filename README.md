@@ -56,7 +56,7 @@ Firefox 16+ | Windows 8  | Windows Phone 8
 2.  In terminal shell, run $ bundle install
 3.  In terminal shell, run $ Rails s
 
-### TasteMaker is proudly hosted on Heroku, and may be seen [here](http://rocky-shelf-7696.herokuapp.com/login)
+### TasteMaker is proudly hosted on Heroku, and may be seen [here](https://boiling-taiga-4856.herokuapp.com/login)
 
 
 
