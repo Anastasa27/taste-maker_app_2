@@ -87,11 +87,15 @@ body {
 
 }
 
+#taste-titles {
+  font-size: 32px;
+  font-weight: bold;
+}
+
 img {
   border-radius: 3px;
   border: 1px solid gray;
 }
-
 
 .scrollable {
   height: 350px;
@@ -106,9 +110,4 @@ img {
 #widgetContainer {
   height: 250px;
   width: 250px;
-}
-
-#taste-titles {
-  font-size: 32px;
-  font-weight: bold;
 }
