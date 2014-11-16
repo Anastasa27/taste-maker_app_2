@@ -1,22 +1,22 @@
 
 <div class="container">
 <section id="1">
-  <h1 style="color: #9C0303;">First, Pick an Animal:</h1>
+  <h1 style="color: #9C0303;">1. Pick an Animal:</h1>
   <form name="quiz" action="/users/<%= params[:user_id] %>/quiz" method="POST">
     <input type="hidden" name="_method" value="PATCH">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-      <input type="image"  src="<%= asset_path("animalquiz/escapist_animal.jpg") %>" name="answer" width="300" height="350" value="EscapeArtist">
+      <input type="image"  src="<%= asset_path("animalquiz/escapist_animal.jpg") %>" name="answer" width="200" height="200" value="EscapeArtist">
 
-      <input type="image" src="<%= asset_path("animalquiz/intelligentsia_animal.jpg") %>" name="answer" width="300" height="350" value="Intelligentsia">
+      <input type="image" src="<%= asset_path("animalquiz/intelligentsia_animal.jpg") %>" name="answer" width="200" height="200" value="Intelligentsia">
 
-      <input type="image" src="<%= asset_path("animalquiz/realist_animal.jpg") %>" name="answer" width="300" height="350" value="Realist">
+      <input type="image" src="<%= asset_path("animalquiz/realist_animal.jpg") %>" name="answer" width="200" height="200" value="Realist">
 
-      <input type="image" src="<%= asset_path("animalquiz/sartorialist_animal.jpg") %>" name="answer" width="300" height="350" value="Sartorialist">
+      <input type="image" src="<%= asset_path("animalquiz/sartorialist_animal.jpg") %>" name="answer" width="200" height="200" value="Sartorialist">
 
 
-      <input type="image" src="<%= asset_path("animalquiz/techie_animal.jpg") %>" name="answer" width="300" height="350" value="Techie">
-
+      <input type="image" src="<%= asset_path("animalquiz/techie_animal.jpg") %>" name="answer" width="200" height="200" value="Techie">
+      <br></br><br></br>
 
   </form>
 </section>
@@ -25,20 +25,20 @@
 <br>
 <div class="container">
 <section id="2">
-  <h1 style="color: #9C0303;">Now, choose a Book:</h1>
+  <h1 style="color: #9C0303;">2. choose a Book:</h1>
   <form name ="quiz" action="/users/<%= params[:user_id] %>/quiz" method="POST">
   <input type="hidden" name="_method" value="PATCH">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-    <input type="image" src="<%= asset_path("booksquiz/escapist_book.JPG") %>" name="answer" width="300" height="350" value="EscapeArtist">
+    <input type="image" src="<%= asset_path("booksquiz/escapist_book.JPG") %>" name="answer" width="200" height="200" value="EscapeArtist">
 
-    <input type="image" src="<%= asset_path("booksquiz/intelligentsia_book.jpg") %>" name="answer" width="300" height="350" value="Intelligentsia">
+    <input type="image" src="<%= asset_path("booksquiz/intelligentsia_book.jpg") %>" name="answer" width="200" height="200" value="Intelligentsia">
 
-    <input type="image" src="<%= asset_path("booksquiz/realist_book.jpg") %>" name="answer" width="300" height="350" value="Realist">
+    <input type="image" src="<%= asset_path("booksquiz/realist_book.jpg") %>" name="answer" width="200" height="200" value="Realist">
 
-    <input type="image" src="<%= asset_path("booksquiz/sartorialist_book.jpg") %>" name="answer" width="300" height="350" value="Sartorialist">
+    <input type="image" src="<%= asset_path("booksquiz/sartorialist_book.jpg") %>" name="answer" width="200" height="200" value="Sartorialist">
 
-    <input type="image" src="<%= asset_path("booksquiz/techie_book.jpg") %>" name="answer" width="300" height="350" value="Techie">
+    <input type="image" src="<%= asset_path("booksquiz/techie_book.jpg") %>" name="answer" width="200" height="200" value="Techie">
 
 </form>
 </section>
@@ -47,20 +47,20 @@
 <br>
 <div class="container">
 <section id="3">
-  <h1 style="color: #9C0303;">Select a Map:</h1>
+  <h1 style="color: #9C0303;">3. Select a Map:</h1>
  <form name="quiz" action="/users/<%= params[:user_id] %>/quiz" method="POST">
   <input type="hidden" name="_method" value="PATCH">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-    <input type="image" src="<%= asset_path("mapquiz/escapist_map.jpg") %>" name="answer" width="300" height="350" value="EscapeArtist">
+    <input type="image" src="<%= asset_path("mapquiz/escapist_map.jpg") %>" name="answer" width="200" height="200" value="EscapeArtist">
 
-    <input type="image" src="<%= asset_path("mapquiz/intell_map.png") %>" name="answer" width="300" height="350" value="Intelligentsia">
+    <input type="image" src="<%= asset_path("mapquiz/intell_map.png") %>" name="answer" width="200" height="200" value="Intelligentsia">
 
-    <input type="image" src="<%= asset_path("mapquiz/realist_map.jpg") %>" name="answer" width="300" height="350" value="Realist">
+    <input type="image" src="<%= asset_path("mapquiz/realist_map.jpg") %>" name="answer" width="200" height="200" value="Realist">
 
-    <input type="image" src="<%= asset_path("mapquiz/sartor_map.jpg") %>" name="answer" width="300" height="350" value="Sartorialist">
+    <input type="image" src="<%= asset_path("mapquiz/sartor_map.jpg") %>" name="answer" width="200" height="200" value="Sartorialist">
 
-    <input type="image" src="<%= asset_path("mapquiz/techie_map.jpg") %>" name="answer" width="300" height="350" value="Techie">
+    <input type="image" src="<%= asset_path("mapquiz/techie_map.jpg") %>" name="answer" width="200" height="200" value="Techie">
 
 </form>
 </section>
@@ -71,20 +71,20 @@
 
 <div class="container">
 <section id="4">
-  <h1 style="color: #9C0303;">Next, choose a Landscape:</h1>
+  <h1 style="color: #9C0303;">4. Choose a Landscape:</h1>
   <form name="quiz" action="/users/<%= params[:user_id] %>/quiz" method="POST">
   <input type="hidden" name="_method" value="PATCH">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-    <input type="image" src="<%= asset_path("landscapequiz/escapist_landscape.png") %>" name="answer" width="300" height="350" value="EscapeArtist">
+    <input type="image" src="<%= asset_path("landscapequiz/escapist_landscape.png") %>" name="answer" width="200" height="200" value="EscapeArtist">
 
-    <input type="image" src="<%= asset_path("landscapequiz/intell_landscape.jpg") %>" name="answer" width="300" height="350" value="Intelligentsia">
+    <input type="image" src="<%= asset_path("landscapequiz/intell_landscape.jpg") %>" name="answer" width="200" height="200" value="Intelligentsia">
 
-    <input type="image" src="<%= asset_path("landscapequiz/realist_landscape.jpg") %>" name="answer" width="300" height="350" value="Realist">
+    <input type="image" src="<%= asset_path("landscapequiz/realist_landscape.jpg") %>" name="answer" width="200" height="200" value="Realist">
 
-    <input type="image" src="<%= asset_path("landscapequiz/sartorialist_landscape.jpg") %>" name="answer" width="300" height="350" value="Sartorialist">
+    <input type="image" src="<%= asset_path("landscapequiz/sartorialist_landscape.jpg") %>" name="answer" width="200" height="200" value="Sartorialist">
 
-    <input type="image" src="<%= asset_path("landscapequiz/techi_landscape.png") %>" name="answer" width="300" height="350" value="Techie">
+    <input type="image" src="<%= asset_path("landscapequiz/techi_landscape.png") %>" name="answer" width="200" height="200" value="Techie">
 </form>
 </section>
 </div>
@@ -92,20 +92,20 @@
 <br>
 <div class="container">
 <section id="5">
-  <h1 style="color: #9C0303;">Finally pick a Classical Element:</h1>
+  <h1 style="color: #9C0303;">5. Pick a Classical Element:</h1>
  <form name="quiz" action="/users/<%= params[:user_id] %>/quiz" method="POST">
   <input type="hidden" name="_method" value="PATCH">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-    <input type="image" src="<%= asset_path("classicalelementsquiz/escapist_element.jpg") %>" name="answer" width="300" height="350" value="EscapeArtist">
+    <input type="image" src="<%= asset_path("classicalelementsquiz/escapist_element.jpg") %>" name="answer" width="200" height="200" value="EscapeArtist">
 
-    <input type="image" src="<%= asset_path("classicalelementsquiz/intelligentsia_element.jpg") %>" name="answer" width="300" height="350" value="Intelligentsia">
+    <input type="image" src="<%= asset_path("classicalelementsquiz/intelligentsia_element.jpg") %>" name="answer" width="200" height="200" value="Intelligentsia">
 
-    <input type="image" src="<%= asset_path("classicalelementsquiz/realist_element.jpg") %>" name="answer" width="300" height="350" value="Realist">
+    <input type="image" src="<%= asset_path("classicalelementsquiz/realist_element.jpg") %>" name="answer" width="200" height="200" value="Realist">
 
-    <input type="image" src="<%= asset_path("classicalelementsquiz/sartorialist_element.jpg") %>" name="answer" width="300" height="350" value="Sartorialist">
+    <input type="image" src="<%= asset_path("classicalelementsquiz/sartorialist_element.jpg") %>" name="answer" width="200" height="200" value="Sartorialist">
 
-    <input type="image" src="<%= asset_path("classicalelementsquiz/techie_element.jpg") %>" name="answer" width="300" height="350" value="Techie">
+    <input type="image" src="<%= asset_path("classicalelementsquiz/techie_element.jpg") %>" name="answer" width="200" height="200" value="Techie">
 
 </form>
 </section>

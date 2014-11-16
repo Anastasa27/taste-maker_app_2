@@ -26,18 +26,6 @@ header div.home    { float: left;  margin-left:  40px; }
 header div.profile { float: right; margin-right: 40px; }
 header hr          { clear: both; }
 
-#splash {
-
-}
-
-body {
-  padding-top: 70px;
-  background-image: url('http://i.imgur.com/9gliykY.jpg');
-  background-size: cover;
-  /*background-color: white;*/
-  color: #4A4A4A;
-}
-
 
 
 .login {
@@ -126,4 +114,16 @@ img {
 #widgetContainer {
   height: 250px;
   width: 250px;
+}
+
+body, .dash {
+  padding-top: 70px;
+
+  /*background-color: white;*/
+  color: #4A4A4A;
+}
+
+html, body {
+  background-image: url('http://i.imgur.com/9gliykY.jpg');
+  background-size: cover;
 }
