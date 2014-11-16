@@ -1,0 +1,209 @@
+/* line 1, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/JacquelineWilliams/dev/wdi/taste_maker_app/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+header { min-width: 400px; border-bottom: 0px;}
+
+header div.home, div.profile {
+  display: inline-block;
+  margin: 10px 0;
+  width: 30%;
+
+}
+
+header div.home    { float: left;  margin-left:  40px; }
+header div.profile { float: right; margin-right: 40px; }
+header hr          { clear: both; }
+
+#splash {
+
+}
+
+body {
+  padding-top: 70px;
+  background-image: url('http://i.imgur.com/9gliykY.jpg');
+  background-size: cover;
+  /*background-color: white;*/
+  color: #4A4A4A;
+}
+
+
+
+.login {
+  background-color: #DBDBDB;
+}
+
+.jumbotron {
+  background-color: transparent;
+  color:#FFD700;
+  position : absolute;
+  width    : 200px;
+  height   : 200px;
+  left     : 50%;
+  top      : 50%;
+  margin-left : -150px;
+  margin-top  : -160px;
+}
+
+.jumbotron input {
+  color:gray;
+}
+
+
+.page-header h1 {
+  color:#FFD700;
+  font-size: 5em;
+  font-family: 'Italiana', serif;
+}
+
+.page-header small {
+  color:#FFD700;
+  font-size: .5em;
+  font-style: italic;
+
+}
+
+.signup a {
+  color:#FFD700;
+}
+
+.mtndew {
+  background-color: white;
+  position : absolute;
+  width    : 600px;
+  height   : 400px;
+  left     : 60%;
+  top      : 50%;
+  margin-left : -400px;
+  margin-top  : -300px;
+}
+
+.mtndew h3 {
+  font-size: 3em;
+  color: gray;
+}
+
+.panel-title h3 {
+  color: gray;
+}
+
+.launch a {
+  color: gray;
+
+}
+
+#taste-titles {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+img {
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.scrollable {
+  height: 350px;
+  width: 350px;
+  overflow-y: scroll;
+  border: 1px solid gray;
+  box-shadow: 1px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+#widgetContainer {
+  height: 250px;
+  width: 250px;
+}
