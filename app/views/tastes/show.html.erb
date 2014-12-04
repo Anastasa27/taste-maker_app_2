@@ -6,60 +6,63 @@
     <h1><%= @personality.name %>: <%= @personality.tags %></h1>
   </div>
 
-  <% @tastes.each do |taste| %>
+  <ul class="dashboard_main">
+    <% @tastes.each do |taste| %>
 
-    <div class="col-sm-4">
-      <span id="taste-titles"><strong><%= taste.category %></strong></span></br>
-      <% case taste.category %>
-      <% when "Eat" %>
-        <img src="<%= @instagram_parsed_response_eat["data"][3]["images"]["standard_resolution"]["url"] %>" height="350" width="350" />
-      <% when "Go" %>
-        <img src="<%= @instagram_parsed_response_go["data"][3]["images"]["standard_resolution"]["url"] %>" height="350" width="350" />
-      <% when "Shop" %>
-        <img src="<%= @instagram_parsed_response_shop["data"][3]["images"]["standard_resolution"]["url"] %>" height="350" width="350" />
-      <% when "Read" %>
-        <div class="scrollable">
-          <% @nyt_parsed_response["results"].each do |book| %>
-            <% book["book_details"].each do |info| %>
-              <div>
-                Title: <strong><%= info["title"] %></strong></br>
-                Author: <%= info["author"] %></br>
-                <%= info["description"] %></br>
-              </div></br>
+      <li><div class="col-sm-4">
+        <span id="taste-titles"><strong><%= taste.category %></strong></span></br>
+        <% case taste.category %>
+        <% when "Eat" %>
+          <img src="<%= @instagram_parsed_response_eat["data"][3]["images"]["standard_resolution"]["url"] %>" height="350" width="350" />
+        <% when "Go" %>
+          <img src="<%= @instagram_parsed_response_go["data"][3]["images"]["standard_resolution"]["url"] %>" height="350" width="350" />
+        <% when "Listen" %>
+          <% case @personality.id %>
+          <% when 1 %>
+            <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/user/mobymus/playlist/7aBuRPft205uzpxsBxp3qS" width="250" height="250" frameborder="0" allowtransparency="true"></iframe>
+          <% when 2 %>
+            <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/user/soundrop/playlist/5Yibg8tyfrCKxHWzFIpFcN" width="250" height="250" frameborder="0" allowtransparency="true"></iframe>
+          <% when 3 %>
+            <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/user/sharemyplaylists.com/playlist/3KBBM9y2iNPVm8tVYmfmL9" width="250" height="250" frameborder="0" allowtransparency="true"></iframe>
+          <% when 4 %>
+            <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/user/sonymusicbelgium/playlist/6tnJ4g740KEorytHqqmmCU" width="250" height="250" frameborder="0" allowtransparency="true"></iframe>
+          <% when 5 %>
+            <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/user/12128193812/playlist/4DCIBYMQFR2IFXBqjDZJik" width="250" height="250" frameborder="0" allowtransparency="true"></iframe>
+          <% end %>
+        <% when "Shop" %>
+          <img src="<%= @instagram_parsed_response_shop["data"][3]["images"]["standard_resolution"]["url"] %>" height="350" width="350" />
+        <% when "Read" %>
+          <div class="scrollable">
+            <% @nyt_parsed_response["results"].each do |book| %>
+              <% book["book_details"].each do |info| %>
+                <div>
+                  Title: <strong><%= info["title"] %></strong></br>
+                  Author: <%= info["author"] %></br>
+                  <%= info["description"] %></br>
+                </div></br>
+              <% end %>
             <% end %>
-          <% end %>
-        </div>
-      <% when "Listen" %>
-        <% case @personality.id %>
-        <% when 1 %>
-          <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/user/mobymus/playlist/7aBuRPft205uzpxsBxp3qS" width="250" height="250" frameborder="0" allowtransparency="true"></iframe>
-        <% when 2 %>
-          <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/user/soundrop/playlist/5Yibg8tyfrCKxHWzFIpFcN" width="250" height="250" frameborder="0" allowtransparency="true"></iframe>
-        <% when 3 %>
-          <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/user/sharemyplaylists.com/playlist/3KBBM9y2iNPVm8tVYmfmL9" width="250" height="250" frameborder="0" allowtransparency="true"></iframe>
-        <% when 4 %>
-          <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/user/sonymusicbelgium/playlist/6tnJ4g740KEorytHqqmmCU" width="250" height="250" frameborder="0" allowtransparency="true"></iframe>
-        <% when 5 %>
-          <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/user/12128193812/playlist/4DCIBYMQFR2IFXBqjDZJik" width="250" height="250" frameborder="0" allowtransparency="true"></iframe>
-        <% end %>
-        <% when "Do" %>
-        <div class="scrollable">
-          <% if @personality.id != 5 %>
-            <%= @feed.channel.title %>
-            <ul><% @feed.items.each do |item| %>
-              <li><%= item.title %></li></br>
-            <% end %></ul>
-          <% else %>
-             <%= meetup["name"] %>
-             <%= meetup["link"] %>
-             <%= meetup["description"] %>
-             <%= meetup["rating"] %>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
+          </div>
 
-  <% end %>
+          <% when "Do" %>
+          <div class="scrollable">
+            <% if @personality.id != 5 %>
+              <%= @feed.channel.title %>
+              <ul><% @feed.items.each do |item| %>
+                <li><%= item.title %></li></br>
+              <% end %></ul>
+            <% else %>
+               <%= meetup["name"] %>
+               <%= meetup["link"] %>
+               <%= meetup["description"] %>
+               <%= meetup["rating"] %>
+            <% end %>
+          </div>
+        <% end %>
+      </div></li>
+
+    <% end %>
+  </ul>
 
   <div class="container-fluid">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
